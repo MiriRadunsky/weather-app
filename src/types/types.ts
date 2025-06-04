@@ -19,8 +19,12 @@ export interface CityWeather {
 }
 
 export const CITIES = [
-  { key: 'Eilat,IL', name: 'אילת' },
+  
   { key: 'London,UK', name: 'לונדון' },
-  { key: 'New York,US', name: 'ניו יורק' },
-  { key: 'Anchorage,US', name: 'אלסקה' }
+   { key: 'New York,US', name: 'ניו יורק' },
+   { key: 'Anchorage,US', name: 'אלסקה' },
+  
+  { key: 'Eilat,IL', name: 'אילת' } 
+  
+ 
 ] as const;
