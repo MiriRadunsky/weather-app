@@ -28,3 +28,6 @@ export const CITIES = [
   
  
 ] as const;
+ export interface WeatherCardProps {
+  cityWeather: CityWeather;
+}

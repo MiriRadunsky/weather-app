@@ -1,21 +1,19 @@
 import React from 'react';
-import { Cloud, Zap, Sun } from 'lucide-react';
-import type { CityWeather } from '../types/types';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBolt, faCloud, faSun } from '@fortawesome/free-solid-svg-icons';
 import { getCityDisplayName, roundTemperature } from '../utils';
 import Loading from './Loading';
 
-interface WeatherCardProps {
-  cityWeather: CityWeather;
-}
+import type { WeatherCardProps } from '../types/types';
 
 const WeatherCard: React.FC<WeatherCardProps> = ({ cityWeather }) => {
   const getTemperatureIcon = (feelsLike: number) => {
     if (feelsLike <= 20) {
-      return <Zap className="w-6 h-6 text-[#0066FF]" />; 
+      return <FontAwesomeIcon icon={faBolt} className="w-8 h-8 text-[#004AAD]" />; 
     } else if (feelsLike <= 30) {
-      return <Cloud className="w-6 h-6 text-[#7CC2FF]" />; 
+      return <FontAwesomeIcon icon={faCloud} className="w-8 h-8 text-[#7CC2FF]" />; 
     } else {
-      return <Sun className="w-6 h-6 text-[#FFD600]" />; 
+      return <FontAwesomeIcon icon={faSun} className="w-8 h-8 text-[#FFD600]" />; 
     }
   };
 
