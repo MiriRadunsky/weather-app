@@ -22,7 +22,7 @@ const WeatherPage: React.FC = () => {
             {cities.map((cityWeather) => (
               <WeatherCard
                 key={cityWeather.city}
-                cityWeather={cityWeather}
+                {...cityWeather}
               />
             ))}
           </div>

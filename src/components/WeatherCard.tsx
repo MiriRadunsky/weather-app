@@ -3,10 +3,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBolt, faCloud, faSun } from '@fortawesome/free-solid-svg-icons';
 import { getCityDisplayName, roundTemperature } from '../utils/utils';
 import Loading from './Loading';
+import type { CityWeather } from '../types/types';
 
-import type { WeatherCardProps } from '../types/types';
-
-const WeatherCard: React.FC<WeatherCardProps> = ({ cityWeather }) => {
+const WeatherCard: React.FC<CityWeather> = (cityWeather) => {
   const getTemperatureIcon = (feelsLike: number) => {
     if (feelsLike <= 20) {
       return <FontAwesomeIcon icon={faBolt} className="w-8 h-8 text-[#004AAD]" />; 
