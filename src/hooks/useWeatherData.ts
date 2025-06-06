@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { type CityWeather, CITIES } from '../types/types';
-import { fetchWeatherData } from '../api';
+import { fetchWeatherData } from '../services/api';
 
 export const useWeatherData = () => {
     const [cities, setCities] = useState<CityWeather[]>(

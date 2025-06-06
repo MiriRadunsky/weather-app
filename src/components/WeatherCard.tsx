@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBolt, faCloud, faSun } from '@fortawesome/free-solid-svg-icons';
-import { getCityDisplayName, roundTemperature } from '../utils';
+import { getCityDisplayName, roundTemperature } from '../utils/utils';
 import Loading from './Loading';
 
 import type { WeatherCardProps } from '../types/types';

@@ -1,4 +1,4 @@
-import type { WeatherData } from './types/types';
+import type { WeatherData } from '../types/types';
 
  const API_KEY = import.meta.env.VITE_WEATHER_API_KEY || '8ee633956bad6ae1965b557a94ecfcba';
  const BASE_URL = import.meta.env.VITE_WEATHER_API_URL || 'https://api.openweathermap.org/data/2.5';

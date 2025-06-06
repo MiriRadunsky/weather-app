@@ -1,4 +1,4 @@
-import { CITIES } from './types/types';
+import { CITIES } from '../types/types';
 
 
 
